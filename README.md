@@ -6,4 +6,4 @@
 
 Bringing headless APIs and services together via the content mesh to deliver fast, scalable commerce experiences.
 
-🎞 [**Deck**](https://headlessons-talk-commerce.now.sh) • 💻 [**Demo**]()
+🎞 [**Deck**](https://headlessons-talk-commerce.now.sh) • 💻 [**Demo**](https://github.com/ynnoj/graphcms-printful-example)
