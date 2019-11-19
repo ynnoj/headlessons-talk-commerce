@@ -15,10 +15,6 @@
       "dest": "/deck/main.js"
     },
     {
-      "src": "/images/(.*)",
-      "dest": "/deck/images/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/deck/index.html"
     }
