@@ -3,7 +3,8 @@
   "name": "deck",
   "version": "1.0.0",
   "scripts": {
-    "build": "mdx-deck deck.mdx"
+    "build": "mdx-deck build deck.mdx",
+    "develop": "mdx-deck deck.mdx"
   },
   "devDependencies": {
     "mdx-deck": "^3.0.13"
