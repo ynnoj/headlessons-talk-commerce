@@ -6,20 +6,13 @@
   "builds": [
     {
       "src": "deck/package.json",
-      "use": "@now/static-build",
-      "config": {
-        "distDir": "public"
-      }
+      "use": "@now/static-build"
     }
   ],
   "routes": [
     {
       "src": "/main.js",
       "dest": "/deck/main.js"
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "/deck/images/$1"
     },
     {
       "src": "/(.*)",

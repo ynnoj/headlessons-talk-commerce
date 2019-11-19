@@ -1,4 +1,4 @@
-import { Image, Notes, Split} from 'mdx-deck'
+import { Image, Notes, Split}  from 'mdx-deck'
 import { highlight } from 'mdx-deck/themes'
 import Layout from './layout'
 import Theme from './theme'
@@ -12,8 +12,10 @@ import graphcms from './images/graphcms.png'
 import graphcmsModel from './images/graphcmsModel.png'
 import json from './images/json.png'
 import me from './images/memoji.png'
+import me2 from './images/memoji2.png'
 import printful from './images/printful.png'
 import stitchedQuery from './images/stitchedQuery.png'
+import useCart from './images/useCart.png'
 
 export const themes = [Theme, highlight]
 
@@ -33,7 +35,7 @@ export const themes = [Theme, highlight]
 
 <Layout>
 
-  <img src={me} style={{ width: '40%' }}/>
+  <img src={me} style={{ width: '50%' }}/>
 
 </Layout>
 
@@ -57,6 +59,7 @@ export const themes = [Theme, highlight]
 
   • A new an exciting way to build commerce websites
   • Utilising superior developer tooling
+  • Combining ancillary services and APIs for 
 
 </Notes>
 
@@ -72,7 +75,8 @@ export const themes = [Theme, highlight]
 
   • Separation of concerns
   • Content is created and managed independently to our application detail
-  • 
+  • This data can then be queried and implemented across a range of application and services as required
+  • Satisfied both content creators and developers - no longer do we need to make trade offs
 
 </Notes>
 
@@ -92,6 +96,8 @@ export const themes = [Theme, highlight]
 
   * Serverless by default
   * CDNs - global, secure and fast
+  * React and JavaScript tooling 💯
+  * Content mesh around our app ties services, APIs together
 
 </Layout>
 
@@ -99,7 +105,8 @@ export const themes = [Theme, highlight]
 
   • JAMstack approach abstracts away the maintenance, upkeep of serverless
   • Our applications are securely available across the globe
-  • 
+  • JavaScript (React) tooling now best in class
+  • Event driven integrations and GraphQL makes bringing services together easy
 
 </Notes>
 
@@ -207,12 +214,6 @@ export const themes = [Theme, highlight]
 
 <Image src="https://www.welsermoest.com/wp-content/uploads/2018/12/CLO092918_1886-1295x863.jpg" />
 
-<Notes>
-
-  •
-
-</Notes>
-
 ---
 
 <Layout>
@@ -290,12 +291,6 @@ export const themes = [Theme, highlight]
 
 </Layout>
 
-<Notes>
-
-  •
-
-</Notes>
-
 ---
 
 <Layout>
@@ -308,7 +303,8 @@ export const themes = [Theme, highlight]
 
 <Notes>
 
-  • 
+  • Utilising a native GraphQL CMS to extend our Printful product model
+  • Here we can add models and fields missing from Printful that we require to build out our storefront
 
 </Notes>
 
@@ -338,7 +334,7 @@ export const themes = [Theme, highlight]
 
 <Notes>
 
-  •
+  • Utilising the `createResolvers` API to simulate schema stitching
 
 </Notes>
 
@@ -349,12 +345,6 @@ export const themes = [Theme, highlight]
   <img src={stitchedQuery} style={{ width: '35%'}} />
 
 </Layout>
-
-<Notes>
-
-  •
-
-</Notes>
 
 ---
 
@@ -394,7 +384,70 @@ export const themes = [Theme, highlight]
 
 <Layout>
 
+  # Handling cart functionality 🛒
+
+  Using local application state to manage carts with `use-react-cart`
+
+</Layout>
+
+<Notes>
+
+  • Speedy cart functionality to add, update and remove items
+  • Restricted to local application state (not session based)
+  • Alternative APIs are available, including CartQL
+
+</Notes>
+
+---
+
+<Layout>
+
+  <img src={useCart} style={{ width: '35%' }}/>
+
+</Layout>
+
+<Notes>
+
+  • Sideloading data dynamically like this ensure we get the most recent records
+  • Prevents blocking rendering of essential page
+  • Maintains perception of page speed
+
+</Notes>
+
+---
+
+<Layout>
+
   <Image src="https://files-7tyseanky.now.sh/fast.gif" />
+
+</Layout>
+
+---
+
+<Layout>
+
+  # It doesn't end there
+
+  Integrate additional third-party services for payments, fulfilment
+
+</Layout>
+
+<Notes>
+
+  • Complete the full commerce checkout flow utilising payment APIs such as Stripe of Adyen
+  • In this particular instance we'd capture payment and then fulfil the order with Printful
+  • Use serverless functions to talk to Printful API
+
+</Notes>
+
+---
+
+<Layout>
+
+  <Split>
+    <img src={me2} style={{ width: '50%' }}/>
+    Thanks for listening!
+  </Split>
 
 </Layout>
 
