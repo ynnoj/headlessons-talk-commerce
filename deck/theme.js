@@ -4,7 +4,6 @@ export default {
   ...themes.future,
   styles: {
     img: {
-      width: '40%',
       margin: '0 auto'
     },
     h1: {

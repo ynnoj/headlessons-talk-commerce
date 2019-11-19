@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "scripts": {
     "build": "mdx-deck build deck.mdx",
-    "now-build": "yarn build",
     "start": "mdx-deck deck.mdx"
   },
   "devDependencies": {
