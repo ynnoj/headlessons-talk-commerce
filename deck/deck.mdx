@@ -1,10 +1,400 @@
+import { Image, Notes, Split} from 'mdx-deck'
+import { highlight } from 'mdx-deck/themes'
 import Layout from './layout'
 import Theme from './theme'
 
-export const theme = Theme
+import apolloQuery from './images/apolloQuery.png'
+import createFile from './images/createFile.png'
+import createNode from './images/createNode.png'
+import createResolvers from './images/createResolvers.png'
+import gatsbyQuery from './images/gatsbyQuery.png'
+import graphcms from './images/graphcms.png'
+import graphcmsModel from './images/graphcmsModel.png'
+import json from './images/json.png'
+import me from './images/memoji.png'
+import printful from './images/printful.png'
+import stitchedQuery from './images/stitchedQuery.png'
+
+export const themes = [Theme, highlight]
 
 <Layout>
 
-  # Hello
+  # Modular service based commerce
+
+  For the JAMstack
 
 </Layout>
+
+---
+
+<Image src="https://www.azamara.co.uk/sites/default/files/heros/newcastle-upon-tyne-england-1800x1000.jpg" />
+
+---
+
+<Layout>
+
+  <img src={me} style={{ width: '40%' }}/>
+
+</Layout>
+
+---
+
+<Layout>
+
+  <img src={graphcms} style={{ width: '60%' }}/>
+
+</Layout>
+
+---
+
+<Layout>
+
+  # Building commerce sites in 2020
+
+</Layout>
+
+<Notes>
+
+  • A new an exciting way to build commerce websites
+  • Utilising superior developer tooling
+
+</Notes>
+
+---
+
+<Layout>
+
+  # Dawn of the headless CMS
+  
+</Layout>
+
+<Notes>
+
+  • Separation of concerns
+  • Content is created and managed independently to our application detail
+  • 
+
+</Notes>
+
+---
+
+<Layout>
+
+  # We can build sites differently now, too
+
+  Significant improvements to developer tooling
+
+</Layout>
+
+---
+
+<Layout>
+
+  * Serverless by default
+  * CDNs - global, secure and fast
+
+</Layout>
+
+<Notes>
+
+  • JAMstack approach abstracts away the maintenance, upkeep of serverless
+  • Our applications are securely available across the globe
+  • 
+
+</Notes>
+
+---
+
+<Layout>
+
+  # JAMstack ❤️ commerce
+
+  JAMcommerce
+
+</Layout>
+
+
+<Notes>
+
+  • JAMstack is a great fit for ecommerce websites
+
+</Notes>
+
+---
+
+<Layout>
+
+  * Static product pages
+  * Secondary data fetched dynamically
+  * Cart logic managed with application state
+  * Checkout flow powered by third-party APIs, serverless functions
+
+</Layout>
+
+<Notes>
+
+  • 
+
+</Notes>
+
+---
+
+<Layout>
+
+  # You don't need a commerce *platform*
+
+</Layout>
+
+<Notes>
+
+  • Utilise best-of-breed services
+  • No 'jack of all trades' approach
+  • Best of all, this approach allows you to incrementally transition away from existing systems
+
+</Notes>
+
+---
+
+<Layout>
+
+ <img src={printful} />
+
+</Layout>
+
+<Notes>
+
+  • Popular drop shipping service
+  • Used recently on personal project
+  • Offers REST API
+
+</Notes>
+
+---
+
+<Layout>
+
+  <img src={json} />
+
+</Layout>
+
+<Notes>
+
+  • Printful API is pretty basic
+  • Available fields relate to the product generated in Printful
+  • But lacking common meta fields (description, slug, SKU)
+  • No scope to extend the model either
+
+</Notes>
+
+---
+
+<Layout>
+
+  # Filling the gaps
+
+  Bringing other services to the party 🎉
+
+</Layout>
+
+<Notes>
+
+  • We can implement additional APIs or services to enhance our product offering
+  • Fulfilling the best-of-breed service approach
+
+</Notes>
+
+---
+
+<Image src="https://www.welsermoest.com/wp-content/uploads/2018/12/CLO092918_1886-1295x863.jpg" />
+
+<Notes>
+
+  •
+
+</Notes>
+
+---
+
+<Layout>
+
+  # Orchestrating the content mesh
+
+  With GraphQL and Gatsby
+
+</Layout>
+
+<Notes>
+
+  • Gatsby is a compiler for React
+  • GraphQL at the core
+  • Amazing developer experience
+  • NOT only for static sites, can be used to build dynamic experiences too
+  • Perfect tool to use when building commerce websites
+  • Powerful APIs allow us to source content and build custom GraphQL schema
+
+</Notes>
+
+---
+
+<Layout>
+
+  <img src={createNode} style={{ width: '45%'}} />
+
+</Layout>
+
+<Notes>
+
+  • Two options when using GraphQL in Gatsby: native GraphQL APIs, source plugins
+  • Extensive APIs for sourcing data in Gatsby
+  • Here we're creating Gatsby nodes with our product data from the Printful REST API
+  • These nodes can then be queried via GraphQL in our React components for Gatsby
+
+</Notes>
+
+---
+
+<Layout>
+
+  <img src={createFile} style={{ width: '75%'}} />
+
+</Layout>
+
+<Notes>
+
+  • We can also download and create nodes for remote images using `createRemoteFileNode`
+  • This allows us to use `gatsby-image` to load product images progressively
+
+</Notes>
+
+---
+
+<Layout>
+
+  <img src={gatsbyQuery} style={{ width: '35%'}} />
+
+</Layout>
+
+<Notes>
+
+  • This query is from the schema automatically generated for us by the Gatsby source plugin
+  • We can query nodes that are fetched from third-party sources during build using GraphQL queries
+  • This data can then be rendered statically in our React components
+
+</Notes>
+
+---
+
+<Layout>
+
+  <Image src="https://files-4iwls3rr4.now.sh/fast.gif" />
+
+</Layout>
+
+<Notes>
+
+  •
+
+</Notes>
+
+---
+
+<Layout>
+
+  # Extending our product schema
+
+  Using GraphCMS
+
+</Layout>
+
+<Notes>
+
+  • 
+
+</Notes>
+
+---
+
+<Layout>
+
+  <img src={graphcmsModel} style={{width: '80%'}}/>
+
+</Layout>
+
+<Notes>
+
+  • We've created a new model in our GraphCMS project
+  • `printfulProductId` field ties our GraphCMS content directly to the associated Printful product
+  • This relationship is unfortunately 
+
+</Notes>
+
+---
+
+<Layout>
+
+  <img src={createResolvers} style={{ width: '75%'}} />
+
+</Layout>
+
+<Notes>
+
+  •
+
+</Notes>
+
+---
+
+<Layout>
+
+  <img src={stitchedQuery} style={{ width: '35%'}} />
+
+</Layout>
+
+<Notes>
+
+  •
+
+</Notes>
+
+---
+
+<Layout>
+
+  # Dynamic product data
+
+  Fetching data on page load with Apollo Client
+
+</Layout>
+
+<Notes>
+
+  • Gatsby runs data queries at build time, resulting in static page builds
+  • We can utilise other GraphQL clients, such as Apollo, to fetch non-static data during page load
+  • Inventory, product reviews are examples of this
+
+</Notes>
+
+---
+
+<Layout>
+
+  <img src={apolloQuery} style={{ width: '35%' }}/>
+
+</Layout>
+
+<Notes>
+
+  • Sideloading data dynamically like this ensure we get the most recent records
+  • Prevents blocking rendering of essential page
+  • Maintains perception of page speed
+
+</Notes>
+
+---
+
+<Layout>
+
+  <Image src="https://files-7tyseanky.now.sh/fast.gif" />
+
+</Layout>
+

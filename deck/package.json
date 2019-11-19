@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "mdx-deck build deck.mdx",
-    "now-build": "yarn build",
+    "now-build": "yarn build && cp -r images dist/",
     "start": "mdx-deck deck.mdx"
   },
   "devDependencies": {
