@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "author": "Jonathan Steele <jonathan@steele.pro> (https://steele.pro)",
+  "license": "MIT",
+  "workspaces": [
+    "deck"
+  ],
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}

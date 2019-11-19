@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "scope": "ynnoj",
+  "name": "headlessons-talk-commerce",
+  "alias": "headlessons-talk-commerce",
+  "builds": [
+    {
+      "src": "deck/package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/main.js",
+      "dest": "/deck/main.js"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/deck/images/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/deck/index.html"
+    }
+  ]
+}
