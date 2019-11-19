@@ -6,7 +6,10 @@
   "builds": [
     {
       "src": "deck/package.json",
-      "use": "@now/static-build"
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
     }
   ],
   "routes": [
