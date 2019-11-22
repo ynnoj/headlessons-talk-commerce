@@ -1,4 +1,4 @@
-# Orchestrating modular service based commerce
+# Modular service based commerce
 
 > 📣 Commerce talk at Headlessons, Berlin from November 2019
 
